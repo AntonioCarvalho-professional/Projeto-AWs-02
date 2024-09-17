@@ -246,21 +246,21 @@ EC2 para efetuar abertura da página padrão do Apache.
 1. Crie o script check_service.sh: 
 2. #!/bin/bash 
 3.  
-4. # Configuração dos serviços e diretórios de saída 
+4. #Configuração dos serviços e diretórios de saída 
 5. SERVICES=("httpd" "nfs-server") 
 6. NFS_PATH="/home/Antonio/server-nfs/logs" 
 7. LOG_FILE="/var/log/service_monitor.log" 
 8. ONLINE_FILE="$NFS_PATH/service_online.txt" 
 9. OFFLINE_FILE="$NFS_PATH/service_offline.txt" 
 10.   
-11.  # Função para logar mensagens com timestamp atualizado 
+11.  #Função para logar mensagens com timestamp atualizado 
 12.  log_message() { 
 13.      local message="$1" 
 14.      local timestamp=$(date +"%Y-%m-%d %H:%M:%S") 
 15.      echo "$timestamp - $message" >> "$LOG_FILE" 
 16.  } 
 17.   
-18.  # Verifica se o diretório de montagem existe; caso contrário, tenta criar 
+18.  #Verifica se o diretório de montagem existe; caso contrário, tenta criar 
 19.  if [ ! -d "$NFS_PATH" ]; then 
 20.      log_message "Diretório $NFS_PATH não existe. Tentando criar..." 
 21.      if mkdir -p "$NFS_PATH"; then 
@@ -271,7 +271,7 @@ EC2 para efetuar abertura da página padrão do Apache.
 26.      fi 
 27.  fi 
 28.   
-29.  # Monitoramento dos serviços 
+29.  #Monitoramento dos serviços 
 30.  for SERVICE_NAME in "${SERVICES[@]}"; do 
 31.      TIMESTAMP=$(date +"%Y-%m-%d %H:%M:%S") 
 32.      if systemctl is-active --quiet "$SERVICE_NAME"; then 
@@ -292,9 +292,11 @@ EC2 para efetuar abertura da página padrão do Apache.
 46.      log_message "$MESSAGE" 
 47.  done 
 48.   
-49.  # Registra no log principal que as listas foram atualizadas 
-50.  log_message "Lista de serviços ONLINE atualizada em $ONLINE_FILE." 
-log_message "Lista de serviços OFFLINE atualizada em $OFFLINE_FILE." 
+49.      #Registra no log principal que as listas foram atualizadas
+>> 
+50.  log_message "Lista de serviços ONLINE atualizada em $ONLINE_FILE."
+    
+     log_message "Lista de serviços OFFLINE atualizada em $OFFLINE_FILE." 
 
 # Passo 11: 
 #### Tornando o script executável e configure o cron: 
