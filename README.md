@@ -1,6 +1,5 @@
-![012](https://github.com/user-attachments/assets/8deaf5fc-c4d1-4489-8a9d-7f0eca3022eb)# Projeto-AWs-02
-Atividade Compass UOl
-# Projeto-Compass-UOL 
+ 
+# Atividade Projeto-Compass-UOL 
 ## RELATÓRIO DE INSTALAÇÃO DO SERVIDOR LINUX COM APACHE E NFS NA AWS
 ### Antonio Carvalho
 ##  (SET/2024)
@@ -325,7 +324,8 @@ EC2 para efetuar abertura da página padrão do Apache.
 A configuração de monitoramento criada para ser executado a cada 5 minutos." 
 #### Teste da página do Apache via IP: 
 
-![016](https://github.com/user-attachments/assets/fd43a09b-d334-4bfc-b2bb-1c322b0e47e0)
+![015](https://github.com/user-attachments/assets/1c24ecce-aacb-449c-8315-bc4cf931de08)
+
 
 
 
