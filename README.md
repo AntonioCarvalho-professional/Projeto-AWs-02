@@ -28,19 +28,24 @@ Volume Type;
 - No Console da AWS, clique em Launch Instance;
 - Nome da Instância: Nomeie a instância;
   
-print
+![001](https://github.com/user-attachments/assets/2c2d16e5-0dc8-4f92-b5f4-19d24493c41e)
+
 Escolher AMI (Amazon Machine Image):
 
-print
+![002](https://github.com/user-attachments/assets/d0428b3d-2a2c-48e9-8354-2e3011f0c06d)
+
 - Amazon Linux 2 (64-bit);
 
-print
+![003](https://github.com/user-attachments/assets/c09afe41-19c4-4af3-b82c-576dd40741b3)
+
 - Tipo de Instância: t3.small;
 
-print
+![004](https://github.com/user-attachments/assets/805782db-b7ba-4763-87ff-9d599034c2fa)
+
 - Par de Chaves:Criado e baixado anteriormente chave.pem (automaticamente);
 
-print
+![005](https://github.com/user-attachments/assets/ee2e849e-601d-45fc-afe5-dfaffaab4753)
+
 
 # Passo 2: 
 ## Configurando as portas: 
