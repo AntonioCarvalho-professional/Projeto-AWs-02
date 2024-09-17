@@ -1,4 +1,4 @@
-# Projeto-AWs-02
+![012](https://github.com/user-attachments/assets/8deaf5fc-c4d1-4489-8a9d-7f0eca3022eb)# Projeto-AWs-02
 Atividade Compass UOl
 # Projeto-Compass-UOL 
 ## RELATÓRIO DE INSTALAÇÃO DO SERVIDOR LINUX COM APACHE E NFS NA AWS
@@ -119,7 +119,7 @@ Selecione o Security Group associado à sua instância.
 - Selecione a instância criada e clique em Connect; 
 - Use EC2 Instance Connect para acessar via navegador.
 
-Print
+![011](https://github.com/user-attachments/assets/4e059948-13e8-4fed-8dde-18ce41a86cf7)
 
 
 # PROCEDIMENTO DE INSTALAÇÃO DO NFS E DO APACHE NA AWS 
@@ -161,7 +161,9 @@ Configurando as permissões do diretório:
 ### Observe as regras de segurança da AWS para a porta 2049 (NFS), seguindo os procedimentos abaixo descrito. 
 Através do console gráfico da AWS, acesse o Console da AWS, navegue para "EC2":
 
-Print
+![012](https://github.com/user-attachments/assets/972cf987-47ad-4d80-86c2-60885a5f7a0a)
+
+
 - No painel de serviços, selecione EC2. 
 - No painel de navegação à esquerda, selecione Security Groups (Grupos de 
 Segurança). 
@@ -199,7 +201,8 @@ entrada para permitir o tráfego adequado.
 ### Verifique o status do Apache: 
 - sudo systemctl status httpd 
 
- Print
+ ![013](https://github.com/user-attachments/assets/e6bf9d99-a529-424f-a2b6-88a1273fdce0)
+
  
 # Passo 8: 
 #### Deve ser observada as regras de segurança da AWS para as portas 80 (HTTP) e 443 (HTTPS). 
@@ -215,7 +218,8 @@ IPs públicos ou redes específicas.
 #### Verifique as regras de saída (Outbound Rules) (opcional): 
 #### Na aba Outbound Rules, certifique-se de que o tráfego de saída nas portas 80 e 443 esteja permitido, se necessário. 
 
-Print
+![014](https://github.com/user-attachments/assets/7aa1426f-b0eb-491e-8b78-a3f77b06f1d5)
+
  
 #### Usando a AWS CLI deve-se usar os comandos abaixo descrito: 
 #### Listar as regras de segurança de um grupo específico: 
@@ -321,7 +325,8 @@ EC2 para efetuar abertura da página padrão do Apache.
 A configuração de monitoramento criada para ser executado a cada 5 minutos." 
 #### Teste da página do Apache via IP: 
 
-Print
+![016](https://github.com/user-attachments/assets/fd43a09b-d334-4bfc-b2bb-1c322b0e47e0)
+
 
 
 
