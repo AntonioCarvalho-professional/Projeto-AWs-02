@@ -74,13 +74,15 @@ Crie um Security Group com as seguintes regras:
 
 Habilitar as caixas  preencher com os dados solicitados e add respectivamente, 
 
-Print
+![006](https://github.com/user-attachments/assets/1509df15-a80f-40c3-aac0-0bcc639d8e82)
+
 # Passo 3: 
 ## Armazenamento: 
 - Altere o armazenamento para  16 GB SSD (gp3). 
 - Finalize a criação da instância EC2 em Launch Instance (Pronto Instância criada).
 
-Print
+![008](https://github.com/user-attachments/assets/6199dc67-f65e-422e-8b16-a555ad9b0186)
+
 # Passo 4: 
  
 ## Atribuindo um Elastic IP: 
@@ -90,7 +92,8 @@ Print
 address;
 - Associe o IP à instância EC2 criada;
 
-Print
+![009](https://github.com/user-attachments/assets/899ea848-6752-4925-b005-f521dbb9df51)
+
 
 # Passo 5:
  
@@ -105,7 +108,8 @@ Selecione o Security Group associado à sua instância.
 - 111/TCP e UDP – Comunicação NFS. 
 - 2049/TCP e UDP – Comunicação NFS. 
 
-Print
+![010](https://github.com/user-attachments/assets/f66cc24a-7820-49c2-a4ba-bd26bae0445b)
+
 
 # Passo 6: 
  
